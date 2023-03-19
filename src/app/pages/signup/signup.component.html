@@ -4,6 +4,8 @@
 
         <div class ="col-md-6 offset-md-3">
 
+            <mat-card>
+
             <div class="container text-center">
                 <img src="../../../assets/study.png" alt="Logo" class="logo ">
             </div>
@@ -13,6 +15,8 @@
             <!-- {{ user | json }} -->
 
             <form (ngSubmit)="formSubmit()">
+
+                <mat-card-header>
                 <!-- Username field -->
                 <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Username</mat-label>
@@ -22,8 +26,10 @@
                     matInput placeholder="Enter Username" />
                     <mat-hint>User name must be unique !!!</mat-hint>
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- Password field -->
+                <mat-card-header>
                 <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Userpassword</mat-label>
                     <input type="password" required
@@ -31,8 +37,10 @@
                     name="password"
                     matInput placeholder="Enter Password" />
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- FirstName field -->
+                <mat-card-header>
                 <mat-form-field appearance="outline" class="full-width">
                     <mat-label>First Name</mat-label>
                     <input required
@@ -40,8 +48,10 @@
                     name="firstName"
                     matInput placeholder="Enter First Name" />
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- LastName field -->
+            <mat-card-header>
                 <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Last Name</mat-label>
                     <input required
@@ -49,8 +59,10 @@
                     name="lastName" 
                     matInput placeholder="Enter Last Name" />
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- Email field -->
+                <mat-card-header>
                 <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>Email Address</mat-label>
                     <input type = "email" required
@@ -58,8 +70,10 @@
                     name="email" 
                     matInput placeholder="Enter Email Address" />
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- Phone field -->
+                <mat-card-header>
                 <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>Phone Number</mat-label>
                     <input type="number" required
@@ -67,8 +81,10 @@
                     name="phone"
                      matInput placeholder="Enter Phone Number" />
                 </mat-form-field>
+            </mat-card-header>
 
                 <!-- About field -->
+                <mat-card-header>
                 <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>About</mat-label>
                     <input required
@@ -76,8 +92,9 @@
                     name="about"
                     matInput placeholder="Enter About" />
                 </mat-form-field>
+            </mat-card-header>
 
-                <div class="container text-center">
+                <div class="container text-center mb20">
                     <button type="submit"  mat-raised-button>Register</button>
                     <button class="ml20" mat-raised-button color="accent">Clear</button>
                 </div>
@@ -87,6 +104,7 @@
 
 
             </form>
+        </mat-card>
 
         </div>
 
