@@ -1,5 +1,5 @@
-<div class="bootstrap-wrapper page-style">
-
+<div class="bootstrap-wrapper">
+    <div class="container">
     <div class="row" style="margin-top: 20px;">
 
         <div class ="col-md-6 offset-md-3">
@@ -14,7 +14,7 @@
 
             <form (ngSubmit)="formSubmit()">
                 <!-- Username field -->
-                <mat-form-field appearance="fill" class="full-width">
+                <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Username</mat-label>
                     <input required
                     [(ngModel)]="user.username"
@@ -24,7 +24,7 @@
                 </mat-form-field>
 
                 <!-- Password field -->
-                <mat-form-field appearance="fill" class="full-width">
+                <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Userpassword</mat-label>
                     <input type="password" required
                     [(ngModel)]="user.password"
@@ -33,7 +33,7 @@
                 </mat-form-field>
 
                 <!-- FirstName field -->
-                <mat-form-field appearance="fill" class="full-width">
+                <mat-form-field appearance="outline" class="full-width">
                     <mat-label>First Name</mat-label>
                     <input required
                     [(ngModel)]="user.firstName"
@@ -42,7 +42,7 @@
                 </mat-form-field>
 
                 <!-- LastName field -->
-                <mat-form-field appearance="fill" class="full-width">
+                <mat-form-field appearance="outline" class="full-width">
                     <mat-label>Last Name</mat-label>
                     <input required
                     [(ngModel)]="user.lastName"
@@ -51,7 +51,7 @@
                 </mat-form-field>
 
                 <!-- Email field -->
-                <mat-form-field appearance="fill"  class="full-width">
+                <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>Email Address</mat-label>
                     <input type = "email" required
                     [(ngModel)]="user.email"
@@ -60,7 +60,7 @@
                 </mat-form-field>
 
                 <!-- Phone field -->
-                <mat-form-field appearance="fill"  class="full-width">
+                <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>Phone Number</mat-label>
                     <input type="number" required
                     [(ngModel)]="user.phone"
@@ -69,7 +69,7 @@
                 </mat-form-field>
 
                 <!-- About field -->
-                <mat-form-field appearance="fill"  class="full-width">
+                <mat-form-field appearance="outline"  class="full-width">
                     <mat-label>About</mat-label>
                     <input required
                     [(ngModel)]="user.about"
@@ -79,7 +79,7 @@
 
                 <div class="container text-center">
                     <button type="submit"  mat-raised-button>Register</button>
-                    <button style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                    <button class="ml20" mat-raised-button color="accent">Clear</button>
                 </div>
 
                     
@@ -91,5 +91,6 @@
         </div>
 
     </div>
+</div>
 
 </div>
