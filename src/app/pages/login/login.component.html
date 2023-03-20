@@ -10,13 +10,18 @@
 
                 <h2 class="text-center">Login Here</h2>
 
-                <form action="">
+                {{loginData | json}}
+                <!-- This "|" is known as Pipe to filter and represent data in json form. -->
+
+                <form (ngSubmit)="formSubmit()">
 
                     <!-- Username Field -->
                     <mat-card-header>
                     <mat-form-field appearance="outline" class="full-width ">
                         <mat-label>Username</mat-label>
-                        <input required
+                        <input
+                        [(ngModel)]="loginData.username"
+                        required
                         name="username"
                         matInput placeholder="Enter Username" />
                         <mat-hint>Valid User Name !!!</mat-hint>
@@ -27,7 +32,9 @@
                     <mat-card-header>
                     <mat-form-field appearance="outline" class="full-width">
                         <mat-label>Password</mat-label>
-                        <input required
+                        <input 
+                        [(ngModel)]="loginData.password"
+                        required
                         name="password" type="password"
                         matInput placeholder="Enter Password" />
                     </mat-form-field>
